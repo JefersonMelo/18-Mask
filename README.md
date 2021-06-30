@@ -1,6 +1,8 @@
 # Máscara Android
 
-A ideia deste repositório surgiu durante a [Mentoria Santander Dev Mobile](https://www.youtube.com/watch?v=4HLpMue7eqg), quando foi questionado por outro Dev o uso de string como entrada de dados (PF e PJ) do usuário e não um Int. Bom, há alguns motivos, como por exempo o [intervalo de cada tipo](https://kotlinlang.org/docs/basic-types.html#integer-types), mas mencionei, na ocasião, o uso de máscaras na formatação das strings e é o que venho demonstrar com esse repositório. Vale ressaltar que não existe validação nesta aplicação, apenas demonstração de uso, e que há outras maneiras de implementar essa funcionalidade.
+A ideia deste repositório surgiu durante a [Mentoria Santander Dev Mobile](https://www.youtube.com/watch?v=4HLpMue7eqg), quando foi levantada a questão do uso de string como entrada de dados (PF e PJ) do usuário e não um Int. Bom, há alguns motivos, como por exemplo o [intervalo de cada tipo](https://kotlinlang.org/docs/basic-types.html#integer-types). Mas mencionei, na ocasião, o uso de máscaras na formatação das strings e é o que venho demonstrar com esse repositório. Vale ressaltar que não existe validação nesta aplicação, apenas demonstração de uso, e que há outras maneiras de implementar essa funcionalidade e que talvez essa não seja a melhor mas é a que tenho utilizado e me está sendo muito útil.
+
+Se curtiu ou se for útil, é só fazer um fork, clonar e se divertir!  
 
 >Os créditos dessa máscara: [Wolmir Cezer Garbin](https://github.com/wolmirgarbin).
 
