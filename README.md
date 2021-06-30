@@ -4,12 +4,16 @@ A ideia deste repositório surgiu durante a [Mentoria Santander Dev Mobile](http
 
 >Os créditos por essa máscara pertencem aos [Wolmir Cezer Garbin](https://github.com/wolmirgarbin).
 
-## Mapa
+## Demonstração
+
+[![Little red riding hood](http://i.imgur.com/7YTMFQp.png)](https://vimeo.com/3514904 "Little red riding hood - Click to Watch!")
+
+## Mapa da Aplicação
 
 1. [Classe Mask Format](https://github.com/JefersonMelo/18-Mask/blob/master/app/src/main/java/com/jefmelo/mask/util/MaskFormatUtil.kt)
 2. [Entrada de Dados Formatados ao Digitar](https://github.com/JefersonMelo/18-Mask/blob/master/app/src/main/java/com/jefmelo/mask/MainActivity.kt)
 3. [Saída dos Dados Formatados](https://github.com/JefersonMelo/18-Mask/blob/master/app/src/main/java/com/jefmelo/mask/ActivityUnmasked.kt)
-4. 
+4. [Ativar Binding](https://github.com/JefersonMelo/18-Mask/blob/dc219cdc520b7b75cf38ab6fbec30bf53261c762/app/build.gradle#L33)
 
 ## Bibliografia
 
