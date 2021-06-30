@@ -68,5 +68,6 @@ object MaskFormatUtil {
             .replace("[ ]".toRegex(), "")
             .replace("[:]".toRegex(), "")
             .replace("[)]".toRegex(), "")
+            .replace("[+]".toRegex(), "")
     }
 }

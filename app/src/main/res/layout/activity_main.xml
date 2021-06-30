@@ -6,24 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView_icon_mask"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_masks_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
         android:id="@+id/id_txt_telefone_completo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:gravity="center"
         android:hint="Tel: +55(11)55555-5555"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_icon_mask" />
 
-    <TextView
+    <EditText
         android:id="@+id/id_txt_cpf"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -34,11 +45,28 @@
         android:layout_marginRight="16dp"
         android:gravity="center"
         android:hint="CPF: 123.123.123-12"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_txt_telefone_completo" />
+
+    <EditText
+        android:id="@+id/id_txt_cnpj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:hint="CNPJ: 12.123.123/0001-12"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_txt_cpf" />
 
     <Button
         android:id="@+id/id_btn_enviar"
@@ -50,37 +78,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Enviar"
-        app:backgroundTint="@color/red"
+        app:backgroundTint="@color/red_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_txt_cnpj" />
-
-    <TextView
-        android:id="@+id/id_txt_cnpj"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:gravity="center"
-        android:hint="CNPJ: 12.123.123/0001-12"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_txt_cpf" />
-
-    <ImageView
-        android:id="@+id/imageView_icon_mask"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_masks_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
