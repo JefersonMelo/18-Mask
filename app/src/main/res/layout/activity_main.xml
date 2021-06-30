@@ -18,7 +18,7 @@
         tools:ignore="VectorDrawableCompat" />
 
     <EditText
-        android:id="@+id/id_txt_telefone_completo"
+        android:id="@+id/id_edit_txt_telefone_completo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView_icon_mask" />
 
     <EditText
-        android:id="@+id/id_txt_cpf"
+        android:id="@+id/id_edit_txt_cpf"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -49,10 +49,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_txt_telefone_completo" />
+        app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_telefone_completo" />
 
     <EditText
-        android:id="@+id/id_txt_cnpj"
+        android:id="@+id/id_edit_txt_cnpj"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -66,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_txt_cpf" />
+        app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_cpf" />
 
     <Button
         android:id="@+id/id_btn_enviar"
@@ -82,6 +82,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_txt_cnpj" />
+        app:layout_constraintTop_toBottomOf="@+id/id_edit_txt_cnpj" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

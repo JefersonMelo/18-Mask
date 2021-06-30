@@ -17,35 +17,35 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding!!.root)
 
         //Definições das Máscaras
-        binding!!.idTxtTelefoneCompleto.addTextChangedListener(
+        binding!!.idEditTxtTelefoneCompleto.addTextChangedListener(
             MaskFormatUtil.mask(
-                binding!!.idTxtTelefoneCompleto,
+                binding!!.idEditTxtTelefoneCompleto,
                 MaskFormatUtil.FORMAT_FONE_COD_COMP
             )
         )
-        binding!!.idTxtCpf.addTextChangedListener(
+        binding!!.idEditTxtCpf.addTextChangedListener(
             MaskFormatUtil.mask(
-                binding!!.idTxtCpf,
+                binding!!.idEditTxtCpf,
                 MaskFormatUtil.FORMAT_CPF
             )
         )
-        binding!!.idTxtCnpj.addTextChangedListener(
+        binding!!.idEditTxtCnpj.addTextChangedListener(
             MaskFormatUtil.mask(
-                binding!!.idTxtCnpj,
+                binding!!.idEditTxtCnpj,
                 MaskFormatUtil.FORMAT_CNPJ
             )
         )
 
-        binding!!.idBtnEnviar.setOnClickListener(View.OnClickListener {
-            val telFormatado:String = MaskFormatUtil.unmask(binding!!.idTxtTelefoneCompleto.text.toString())
-            val cpfFormatado:String = MaskFormatUtil.unmask(binding!!.idTxtCpf.text.toString())
-            val cnpjFormatado:String = MaskFormatUtil.unmask(binding!!.idTxtCnpj.text.toString())
+        binding!!.idBtnEnviar.setOnClickListener {
+            val telFormatado: String = MaskFormatUtil.unmask(binding!!.idEditTxtTelefoneCompleto.text.toString())
+            val cpfFormatado: String = MaskFormatUtil.unmask(binding!!.idEditTxtCpf.text.toString())
+            val cnpjFormatado: String = MaskFormatUtil.unmask(binding!!.idEditTxtCnpj.text.toString())
 
             val intent = Intent(this, ActivityUnmasked::class.java)
-            intent.putExtra("numTelefone", "+$telFormatado")
-            intent.putExtra("cf", cpfFormatado)
+            intent.putExtra("tel", "+$telFormatado")
+            intent.putExtra("pf", cpfFormatado)
             intent.putExtra("pj", cnpjFormatado)
             startActivity(intent)
-        })
+        }
     }
 }
