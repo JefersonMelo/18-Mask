@@ -19,14 +19,12 @@ object MaskFormatUtil {
     const val FORMAT_COD_AREA = "(##)"
 
     /**
-     * By: Wolmir Cezer Garbin
-     * https://receitasdecodigo.com.br/android/como-inserir-mascara-em-um-edittext-no-android
      * Método que deve ser chamado para realizar a formatação
      *
      *
-     * param ediTxt
-     * param mask
-     * return
+     * @param ediTxt
+     * @param mask
+     * @return
      */
     fun mask(ediTxt: EditText, mask: String): TextWatcher {
         return object : TextWatcher {

@@ -30,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    //Ativa Binding View
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
