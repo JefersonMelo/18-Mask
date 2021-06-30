@@ -6,7 +6,7 @@ A ideia deste repositório surgiu durante a [Mentoria Santander Dev Mobile](http
 
 ## Demonstração
 
-[!Utilização de Máscara de Texto](https://vimeo.com/3514904 "Demonstração - Click par ver no Youtube.com")
+![Utilização de Máscara de Texto](img/Mask-App.gif)
 
 ## Mapa da Aplicação
 
