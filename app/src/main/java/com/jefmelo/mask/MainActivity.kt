@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
+        //Envio dos dados utilizando intent.putExtra
         binding!!.idBtnEnviar.setOnClickListener {
             val telFormatado: String = MaskFormatUtil.unmask(binding!!.idEditTxtTelefoneCompleto.text.toString())
             val cpfFormatado: String = MaskFormatUtil.unmask(binding!!.idEditTxtCpf.text.toString())
